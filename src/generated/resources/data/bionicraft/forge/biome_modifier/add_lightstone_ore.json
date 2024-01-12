@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "bionicraft:lightstone_ore_placed",
+  "step": "underground_ores"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "decoration",
+  "pattern": [
+    "c ",
+    "s "
+  ],
+  "key": {
+    "c": {
+      "item": "minecraft:candle"
+    },
+    "s": {
+      "item": "bionicraft:village_stone"
+    }
+  },
+  "result": {
+    "item": "bionicraft:stone_candle"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bionicraft:lightstone_block"
+    }
+  ],
+  "result": {
+    "item": "bionicraft:lightstone",
+    "count": 9
+  }
+}

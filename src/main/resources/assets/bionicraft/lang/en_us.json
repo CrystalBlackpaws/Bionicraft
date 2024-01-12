@@ -1,0 +1,33 @@
+{
+  "item.bionicraft.lightstone": "Light Stone",
+  "item.bionicraft.raw_protodermis": "Raw Protodermis",
+  "block.bionicraft.raw_protodermis_block": "Block of Raw Protodermis",
+  "item.bionicraft.protodermis_ingot": "Protodermis Ingot",
+  "block.bionicraft.protodermis_block": "Block of Protodermis",
+  "block.bionicraft.lightstone_block": "Block of Lightstones",
+
+  "block.bionicraft.lightstone_ore": "Lightstone Ore",
+  "block.bionicraft.deepslate_lightstone_ore": "Deepslate Lightstone Ore",
+  "block.bionicraft.nether_lightstone_ore": "Nether Lightstone Ore",
+  "block.bionicraft.protodermis_ore": "Protodermis Ore",
+  "block.bionicraft.deepslate_protodermis_ore": "Deepslate Protodermis Ore",
+  "block.bionicraft.end_protodermis_ore": "End Protodermis Ore",
+
+  "block.bionicraft.village_stone": "Limestone",
+  "block.bionicraft.black_village_stone": "Basanite",
+  "block.bionicraft.basalt_pillar": "Basalt Pillar",
+  "block.bionicraft.chiseled_basalt": "Chiseled Basalt",
+  "block.bionicraft.stone_candle": "Limestone Candle",
+
+  "block.bionicraft.palm_log": "Palm Log",
+  "block.bionicraft.palm_wood": "Palm Wood",
+  "block.bionicraft.palm_leaves": "Palm Leaves",
+  "block.bionicraft.palm_planks": "Palm Planks",
+  "block.bionicraft.stripped_palm_log": "Stripped Palm Log",
+  "block.bionicraft.stripped_palm_wood": "Stripped Palm Wood",
+
+  "block.bionicraft.harakeke": "Harakeke Plant",
+
+  "creativetab.bionicraft_resources": "Bionicraft Resources",
+  "creativetab.bionicraft_decorative_blocks": "Bionicraft Decorative Blocks"
+}

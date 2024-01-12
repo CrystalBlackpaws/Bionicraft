@@ -1,0 +1,17 @@
+{
+  "values": [
+    "bionicraft:protodermis_block",
+    "bionicraft:raw_protodermis_block",
+    "bionicraft:protodermis_ore",
+    "bionicraft:deepslate_protodermis_ore",
+    "bionicraft:end_protodermis_ore",
+    "bionicraft:nether_lightstone_ore",
+    "bionicraft:lightstone_ore",
+    "bionicraft:deepslate_lightstone_ore",
+    "bionicraft:lightstone_block",
+    "bionicraft:black_village_stone",
+    "bionicraft:village_stone",
+    "bionicraft:basalt_pillar",
+    "bionicraft:chiseled_basalt"
+  ]
+}

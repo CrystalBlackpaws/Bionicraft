@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bionicraft:chiseled_basalt"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "bionicraft:blocks/chiseled_basalt"
+}

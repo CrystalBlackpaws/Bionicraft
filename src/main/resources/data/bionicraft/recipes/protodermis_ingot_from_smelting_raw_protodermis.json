@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1,
+  "group": "protodermis",
+  "ingredient": {
+    "item": "bionicraft:raw_protodermis"
+  },
+  "result": "bionicraft:protodermis_ingot"
+}
