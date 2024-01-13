@@ -28,8 +28,8 @@ public class Bionicraft {
 
         ModCreativeModTabs.register(modEventBus);
 
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+        ModItems.ITEMS.register(modEventBus);
+        ModBlocks.BLOCKS.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

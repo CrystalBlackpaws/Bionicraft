@@ -8,8 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
-    public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, Bionicraft.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Bionicraft.MOD_ID);
 
     public static final RegistryObject<Item> LIGHTSTONE = ITEMS.register("lightstone",
             () -> new Item(new Item.Properties()));
