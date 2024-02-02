@@ -4,6 +4,7 @@
 		"0": "bionicraft:block/lightstone_placed",
 		"particle": "bionicraft:block/lightstone_placed"
 	},
+	"render_type": "cutout",
 	"elements": [
 		{
 			"from": [3, -1, 8],

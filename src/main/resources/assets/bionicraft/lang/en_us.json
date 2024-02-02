@@ -1,10 +1,20 @@
 {
-  "item.bionicraft.lightstone": "Light Stone",
+  "container.bionicraft.mask_forge": "Mask Forge",
+
+  "entities.bionicraft.bamboo_disk_throwable": "Bamboo Disk",
+
+  "item.bionicraft.lightstone": "Lightstone",
   "item.bionicraft.raw_protodermis": "Raw Protodermis",
-  "block.bionicraft.raw_protodermis_block": "Block of Raw Protodermis",
   "item.bionicraft.protodermis_ingot": "Protodermis Ingot",
+  "item.bionicraft.bamboo_disk": "Bamboo Disk",
+
+  "block.bionicraft.raw_protodermis_block": "Block of Raw Protodermis",
   "block.bionicraft.protodermis_block": "Block of Protodermis",
   "block.bionicraft.lightstone_block": "Block of Lightstones",
+  "block.bionicraft.lightstone_placed": "Lightstone",
+  "block.bionicraft.wall_lightstone_placed": "Lightstone",
+
+  "block.bionicraft.mask_forge": "Mask Forge",
 
   "block.bionicraft.lightstone_ore": "Lightstone Ore",
   "block.bionicraft.deepslate_lightstone_ore": "Deepslate Lightstone Ore",

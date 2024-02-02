@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "bionicraft:block/wall_lightstone_placed",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "bionicraft:block/wall_lightstone_placed"
+    },
+    "facing=south": {
+      "model": "bionicraft:block/wall_lightstone_placed",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bionicraft:block/wall_lightstone_placed",
+      "y": 270
+    }
+  }
+}

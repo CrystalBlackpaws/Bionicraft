@@ -21,10 +21,15 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.LIGHTSTONE.get());
                         pOutput.accept(ModItems.RAW_PROTODERMIS.get());
                         pOutput.accept(ModItems.PROTODERMIS_INGOT.get());
+                        pOutput.accept(ModItems.BAMBOO_DISK.get());
+
+                        pOutput.accept(ModBlocks.MASK_FORGE.get());
 
                         pOutput.accept(ModBlocks.LIGHTSTONE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_PROTODERMIS_BLOCK.get());
                         pOutput.accept(ModBlocks.PROTODERMIS_BLOCK.get());
+
+                        //pOutput.accept(ModBlocks.LIGHTSTONE.get());
 
                         pOutput.accept(ModBlocks.LIGHTSTONE_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_LIGHTSTONE_ORE.get());

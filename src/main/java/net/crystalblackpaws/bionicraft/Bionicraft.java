@@ -2,8 +2,13 @@ package net.crystalblackpaws.bionicraft;
 
 import com.mojang.logging.LogUtils;
 import net.crystalblackpaws.bionicraft.block.ModBlocks;
+import net.crystalblackpaws.bionicraft.blockentity.ModBlockEntities;
+import net.crystalblackpaws.bionicraft.entity.ModEntities;
 import net.crystalblackpaws.bionicraft.item.ModCreativeModTabs;
 import net.crystalblackpaws.bionicraft.item.ModItems;
+import net.crystalblackpaws.bionicraft.menu.ModMenus;
+import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -16,6 +21,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Bionicraft.MOD_ID)
@@ -30,6 +36,11 @@ public class Bionicraft {
 
         ModItems.ITEMS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
+        ModBlockEntities.BLOCKS_ENTITIES.register(modEventBus);
+        ModEntities.ENTITIES.register(modEventBus);
+        ModMenus.MENU_TYPES.register(modEventBus);
+
+
 
         modEventBus.addListener(this::commonSetup);
 
@@ -63,7 +74,7 @@ public class Bionicraft {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            EntityRenderers.register(ModEntities.BAMBOO_DISK_THROWABLE.get(), ThrownItemRenderer::new);
         }
     }
 }

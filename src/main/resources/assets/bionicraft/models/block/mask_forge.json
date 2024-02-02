@@ -1,0 +1,125 @@
+{
+  "credit": "Made with Blockbench",
+  "render_type": "minecraft:translucent_no_crumbling",
+  "texture_size": [64, 64],
+  "textures": {
+    "0": "bionicraft:block/mask_forge_texture",
+    "1": "bionicraft:gui/mask_forge",
+    "particle": "bionicraft:block/mask_forge_texture"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 4, 16],
+      "faces": {
+        "north": {"uv": [0, 8, 4, 9], "texture": "#0"},
+        "east": {"uv": [0, 8, 4, 9], "texture": "#0"},
+        "south": {"uv": [0, 8, 4, 9], "texture": "#0"},
+        "west": {"uv": [0, 8, 4, 9], "texture": "#0"},
+        "up": {"uv": [4, 4, 0, 0], "texture": "#0"},
+        "down": {"uv": [4, 4, 0, 8], "texture": "#0"}
+      }
+    },
+    {
+      "from": [3.5, 4, 0],
+      "to": [12.5, 13, 4],
+      "rotation": {"angle": 22.5, "axis": "x", "origin": [11.5, 4, 0]},
+      "faces": {
+        "north": {"uv": [4, 0, 6.25, 2.25], "texture": "#0"},
+        "east": {"uv": [5, 4.5, 6, 6.75], "texture": "#0"},
+        "south": {"uv": [4, 2.25, 6.25, 4.5], "texture": "#0"},
+        "west": {"uv": [4, 4.5, 5, 6.75], "texture": "#0"},
+        "up": {"uv": [6.25, 7.75, 4, 6.75], "texture": "#0"},
+        "down": {"uv": [6.25, 3.5, 4, 4.5], "texture": "#0"}
+      }
+    },
+    {
+      "from": [3.5, 4, 12],
+      "to": [12.5, 13, 16],
+      "rotation": {"angle": -22.5, "axis": "x", "origin": [11.5, 4, 16]},
+      "faces": {
+        "north": {"uv": [4, 2.25, 6.25, 4.5], "texture": "#0"},
+        "east": {"uv": [4, 4.5, 5, 6.75], "texture": "#0"},
+        "south": {"uv": [4, 0, 6.25, 2.25], "texture": "#0"},
+        "west": {"uv": [5, 4.5, 6, 6.75], "texture": "#0"},
+        "up": {"uv": [6.25, 8.75, 4, 7.75], "texture": "#0"},
+        "down": {"uv": [6.25, 3.5, 4, 4.5], "texture": "#0"}
+      }
+    },
+    {
+      "from": [4, 11, 4],
+      "to": [12, 11, 12],
+      "rotation": {"angle": 0, "axis": "y", "origin": [0, 1, 0]},
+      "faces": {
+        "north": {"uv": [0, 0, 2, 0], "texture": "#0"},
+        "east": {"uv": [0, 0, 2, 0], "texture": "#0"},
+        "south": {"uv": [0, 0, 2, 0], "texture": "#0"},
+        "west": {"uv": [0, 0, 2, 0], "texture": "#0"},
+        "up": {"uv": [8.25, 2, 6.25, 0], "texture": "#0"},
+        "down": {"uv": [8.25, 2, 6.25, 4], "texture": "#0"}
+      }
+    },
+    {
+      "from": [0, 4, 3.5],
+      "to": [4, 13, 12.5],
+      "rotation": {"angle": -22.5, "axis": "z", "origin": [0, 4, 3.5]},
+      "faces": {
+        "north": {"uv": [5, 4.5, 6, 6.75], "texture": "#0"},
+        "east": {"uv": [4, 2.25, 6.25, 4.5], "texture": "#0"},
+        "south": {"uv": [4, 4.5, 5, 6.75], "texture": "#0"},
+        "west": {"uv": [4, 0, 6.25, 2.25], "texture": "#0"},
+        "up": {"uv": [7, 6.75, 6, 4.5], "texture": "#0"},
+        "down": {"uv": [5, 2.25, 4, 4.5], "texture": "#0"}
+      }
+    },
+    {
+      "from": [12, 4, 3.5],
+      "to": [16, 13, 12.5],
+      "rotation": {"angle": 22.5, "axis": "z", "origin": [16, 4, 3.5]},
+      "faces": {
+        "north": {"uv": [4, 4.5, 5, 6.75], "texture": "#0"},
+        "east": {"uv": [4, 0, 6.25, 2.25], "texture": "#0"},
+        "south": {"uv": [5, 4.5, 6, 6.75], "texture": "#0"},
+        "west": {"uv": [4, 2.25, 6.25, 4.5], "texture": "#0"},
+        "up": {"uv": [7.25, 9, 6.25, 6.75], "texture": "#0"},
+        "down": {"uv": [5, 2.25, 4, 4.5], "texture": "#0"}
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [0, 7.25, 0]
+    },
+    "thirdperson_lefthand": {
+      "translation": [0, 7.25, 0]
+    },
+    "ground": {
+      "translation": [0, 1, 0]
+    },
+    "head": {
+      "translation": [0, 13.25, 0]
+    },
+    "fixed": {
+      "rotation": [-90, 0, 0],
+      "translation": [0, 0, -6]
+    }
+  },
+  "groups": [
+    {
+      "name": "forge",
+      "origin": [8, 8, 8],
+      "color": 0,
+      "nbt": "{}",
+      "children": [
+        0,
+        {
+          "name": "sides",
+          "origin": [8, 8, 8],
+          "color": 0,
+          "nbt": "{}",
+          "children": [1, 2, 3, 4, 5]
+        }
+      ]
+    }
+  ]
+}
