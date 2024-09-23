@@ -1,8 +1,8 @@
 package net.crystalblackpaws.bionicraft.menu;
 
 import net.crystalblackpaws.bionicraft.Bionicraft;
+import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.inventory.MenuType;
-import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -13,7 +13,7 @@ public class ModMenus {
             DeferredRegister.create(ForgeRegistries.MENU_TYPES, Bionicraft.MOD_ID);
 
     public static final RegistryObject<MenuType<MaskForgeMenu>> MASK_FORGE_MENU = MENU_TYPES.register("mask_forge_menu",
-            () -> IForgeMenuType.create(MaskForgeMenu::new));
+            () -> new MenuType<>(MaskForgeMenu::new, FeatureFlags.DEFAULT_FLAGS));
 
     public static void register(IEventBus eventBus) {
         MENU_TYPES.register(eventBus);

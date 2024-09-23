@@ -10,21 +10,22 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 public class BambooDisk extends Item {
     public BambooDisk(Properties pProperties) {
         super(pProperties);
     }
 
-    @SuppressWarnings("deprecation")
-    public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pHand) {
-        ItemStack itemstack = pPlayer.getItemInHand(pHand);
-        pLevel.playSound((Player)null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(),
-                SoundEvents.EGG_THROW, SoundSource.NEUTRAL, 0.5F, 0.4F / (pLevel.getRandom().nextFloat() * 0.4F + 0.8F));
 
+    public @NotNull InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, @NotNull InteractionHand hand) {
+        ItemStack itemstack = pPlayer.getItemInHand(hand);
+        pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(),
+                SoundEvents.EGG_THROW, SoundSource.NEUTRAL, 0.5F, 0.4F / (pLevel.getRandom().nextFloat() * 0.4F + 0.8F));
+        //Basically a cooldown for item use. there's no issue with removing it as well (technically disables rapid fire)
+        pPlayer.getCooldowns().addCooldown(this, 10);
         if (!pLevel.isClientSide) {
             BambooDiskThrowable BambooDisk = new BambooDiskThrowable(pLevel, pPlayer);
-            BambooDisk.setItem(itemstack);
             BambooDisk.shootFromRotation(pPlayer, pPlayer.getXRot(), pPlayer.getYRot(), 0.0F, 1.5F, 1.0F);
             pLevel.addFreshEntity(BambooDisk);
         }
@@ -35,4 +36,6 @@ public class BambooDisk extends Item {
         }
         return InteractionResultHolder.sidedSuccess(itemstack, pLevel.isClientSide());
     }
+
+
 }

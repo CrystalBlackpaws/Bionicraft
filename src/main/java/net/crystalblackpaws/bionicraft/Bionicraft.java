@@ -3,10 +3,12 @@ package net.crystalblackpaws.bionicraft;
 import com.mojang.logging.LogUtils;
 import net.crystalblackpaws.bionicraft.block.ModBlocks;
 import net.crystalblackpaws.bionicraft.blockentity.ModBlockEntities;
+import net.crystalblackpaws.bionicraft.client.screen.MaskForgeScreen;
 import net.crystalblackpaws.bionicraft.entity.ModEntities;
 import net.crystalblackpaws.bionicraft.item.ModCreativeModTabs;
 import net.crystalblackpaws.bionicraft.item.ModItems;
 import net.crystalblackpaws.bionicraft.menu.ModMenus;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -75,6 +77,9 @@ public class Bionicraft {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.BAMBOO_DISK_THROWABLE.get(), ThrownItemRenderer::new);
+            event.enqueueWork(
+                    () -> MenuScreens.register(ModMenus.MASK_FORGE_MENU.get(), MaskForgeScreen::new)
+            );
         }
     }
 }

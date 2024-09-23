@@ -26,10 +26,10 @@ public class ModBlocks {
             () -> new MaskForge(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE).noOcclusion()));
     public static final RegistryObject<Lightstone> LIGHTSTONE = registerBlock("lightstone_placed",
             () -> new Lightstone(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE)
-                    .sound(SoundType.AMETHYST).noOcclusion()));
+                    .sound(SoundType.AMETHYST).noOcclusion().instabreak()));
     public static final RegistryObject<WallLightStone> WALL_LIGHTSTONE = registerBlock("wall_lightstone_placed",
             () -> new WallLightStone(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE)
-                    .sound(SoundType.AMETHYST).noOcclusion()));
+                    .sound(SoundType.AMETHYST).noOcclusion().instabreak()));
 
     public static final RegistryObject<Block> LIGHTSTONE_ORE = registerBlock("lightstone_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.GLOWSTONE)
